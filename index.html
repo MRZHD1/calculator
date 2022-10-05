@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="text">Odin Calculator</div>
+    </div>
+    
+    <div class="body">
+        <div class="left"></div>
+        <div class="calculator">
+            <div class="screen">0</div>
+            <div class="clear" onclick="del('clear')"><div>clear</div></div>
+            <div class="backspace" onclick="del('backspace')"><i class="material-icons"><div>backspace</div></i></div>
+            <div class="divide" onclick="operate('/')"><div>/</div></div>
+            <div class="num-1" onclick="num(1)"><div>1</div></div>
+            <div class="num-2" onclick="num(2)"><div>2</div></div>
+            <div class="num-3" onclick="num(3)"><div>3</div></div>
+            <div class="multiply" onclick="operate('*')"><div>*</div></div>
+            <div class="num-4" onclick="num(4)"><div>4</div></div>
+            <div class="num-5" onclick="num(5)"><div>5</div></div>
+            <div class="num-6" onclick="num(6)"><div>6</div></div>
+            <div class="minus" onclick="operate('-')"><div>-</div></div>
+            <div class="num-7" onclick="num(7)"><div>7</div></div>
+            <div class="num-8" onclick="num(8)"><div>8</div></div>
+            <div class="num-9" onclick="num(9)"><div>9</div></div>
+            <div class="plus" onclick="operate('+')"><div>+</div></div>
+            <div class="num-0" onclick="num(0)"><div>0</div></div>
+            <div class="equals" onclick="operate('=')"><div>=</div></div>
+            
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
