@@ -52,16 +52,17 @@ function operate(operation) {
 }
 
 function evaluate(a, operation, b) {
-    if (operation == '+'){result = parseFloat(firstNum) + parseFloat(secondNum)}
-    else if (operation == '-'){result = parseFloat(firstNum) - parseFloat(secondNum)}
+    if (operation == '+'){result = parseFloat(a) + parseFloat(b)}
+    else if (operation == '-'){result = parseFloat(a) - parseFloat(b)}
     else if (operation == '/'){
         if (b == 0) {
             del('clear')
             screen.textContent = `no.`
+            result = "no."
         }
-        else{result = parseFloat(firstNum) / parseFloat(secondNum)}
+        else{result = parseFloat(a) / parseFloat(b)}
     }
-    else {result = parseFloat(firstNum) * parseFloat(secondNum)} // if operation == *
+    else {result = parseFloat(a) * parseFloat(b)} // if operation == *
 
     if (result % 1 === 0) {
         return result.toString()
